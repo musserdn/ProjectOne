@@ -61,6 +61,7 @@ function clearRecipes() {
     displayRecipes();
 }
 
+// Run functions on load
 displayRecipes(ingredientsList, recipesContainer);
 displayIngredients(ingredientsList, ingredientsContainer);
 

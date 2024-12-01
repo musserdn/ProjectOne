@@ -9,15 +9,15 @@
 
 ## Installation
 
-This product is a suite of .html, javascript, Cascading Style Sheets (CSS), Semantic UI CSS Framework and image files. To get started, visit the last deployed version of our webpage at [GitHub pages](https://musserdn.github.io/ProjectOne/).
+This product is a suite of .html, javascript, Cascading Style Sheets (CSS), Semantic UI CSS Framework and image files. To get started, visit the last deployed version of our webpage at [GitHub pages](https://musserdn.github.io/Foodie/).
 
-To install locally, clone the repository from the [Github](https://github.com/musserdn/ProjectOne), pull down, and open the `index.html` file with your default browser.
+To install locally, clone the repository from the [Github](https://github.com/musserdn/Foodie), pull down, and open the `index.html` file with your default browser.
 
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-1. Navigate to [Foodie.](https://musserdn.github.io/ProjectOne/);
+1. Navigate to [Foodie.](https://musserdn.github.io/Foodie/);
 2. Review the plethora of recipes organized by category;
 3. Click on the image of the recipe to open up the modal detail;
 4. Review the Ingredients and Instructions;
@@ -48,8 +48,8 @@ This project uses [Semantic UI](https://semantic-ui.com/) for styling and layout
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Badges
-![GitHub branch check runs](https://img.shields.io/github/check-runs/musserdn/ProjectOne/main)
-![GitHub contributors](https://img.shields.io/github/contributors/musserdn/ProjectOne)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/musserdn/ProjectOne)
-![GitHub License](https://img.shields.io/github/license/musserdn/ProjectOne)
-![GitHub repo size](https://img.shields.io/github/repo-size/musserdn/ProjectOne)
+![GitHub branch check runs](https://img.shields.io/github/check-runs/musserdn/Foodie/main)
+![GitHub contributors](https://img.shields.io/github/contributors/musserdn/Foodie)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/musserdn/Foodie)
+![GitHub License](https://img.shields.io/github/license/musserdn/Foodie)
+![GitHub repo size](https://img.shields.io/github/repo-size/musserdn/Foodie)

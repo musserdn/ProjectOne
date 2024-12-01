@@ -7,7 +7,6 @@ document.querySelectorAll('[id^="CF"]').forEach(element => {
 });
 // pull ingredientsList Object from local storage if it exists, else create an empty array
 let ingredientsList = JSON.parse(localStorage.getItem('ingredientsList')) || [];
-// let ingredientsList = [];
 let ingredientInfo = {
     recipeId: "",
     ingredients: [],
@@ -26,13 +25,14 @@ document.querySelectorAll('.ui.long.large.modal .plus').forEach(addButton => {
 
         // Get recipe details
         newIngredientInfo.recipeId = this.closest('.ui.long.large.modal').id;
+        // Traverse the DOM to get the recipe title
         newIngredientInfo.title = this.parentElement.parentElement.parentElement.children[1].innerText;
 
-        // Check if recipe already exists
+        // Check if recipe already exists, will return true if recipe is found
         const recipeExists = ingredientsList.some(recipe => recipe.recipeId === newIngredientInfo.recipeId);
 
         if (!recipeExists) {
-            // Extract ingredients
+            // Extract ingredients if recipeExists is false
             document.querySelectorAll(`#${newIngredientInfo.recipeId} .description ul li`).forEach((li) => {
                 const span = li.querySelector('.ing');
                 const trimmedText = li.textContent.replace(span.textContent, '').trim();
@@ -46,8 +46,10 @@ document.querySelectorAll('.ui.long.large.modal .plus').forEach(addButton => {
             ingredientsList.push(newIngredientInfo);
             localStorage.setItem('ingredientsList', JSON.stringify(ingredientsList));
             console.log('Added new recipe:', newIngredientInfo);
+            // Hides modal after click if new recipe is added
             $(`#${newIngredientInfo.recipeId}`).modal('hide');
         } else {
+            // Log message if recipe already exists, modal does not hide
             console.log('Recipe already exists');
         }
     });
@@ -75,8 +77,8 @@ document.querySelectorAll('.ui.long.large.modal .minus').forEach(minusbutton => 
 
 console.log(ingredientsList);
 
+// Button click event listener for Done button
 document.getElementById('done').addEventListener('click', function () {
     localStorage.setItem('ingredientsList', JSON.stringify(ingredientsList));
     window.location.href = 'shopping.html';
-    console.log("clicked");
 });
